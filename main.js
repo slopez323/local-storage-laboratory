@@ -5,7 +5,7 @@ displayString();
 if (localStorage.getItem('count')) {
     let count = localStorage.getItem('count');
     localStorage.setItem('count', +count + 1);
-} else localStorage.setItem('count', 1);
+} else localStorage.setItem('count', 0);
 
 $('#stringChallenge').on('submit', function (event) {
     event.preventDefault();
